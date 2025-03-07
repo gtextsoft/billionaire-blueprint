@@ -81,7 +81,7 @@ const OfferSection = () => {
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N100,000</div>
                 <p className="text-gray-600 mb-4">All 47 books in Ebook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark">Choose Package</Button>
+                <Button className="w-full bg-navy hover:bg-navy-dark"onClick={() => window.location.href = 'https://paystack.com/pay/5ugkve6-8l'}>Choose Package</Button>
               </CardContent>
             </Card>
             
@@ -95,7 +95,7 @@ const OfferSection = () => {
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N170,000</div>
                 <p className="text-gray-600 mb-4">All 47 books in BOTH Ebook & Audiobook formats</p>
-                <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold">Choose Package</Button>
+                <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://paystack.com/pay/pi8pm1848j'}>Choose Package</Button>
               </CardContent>
             </Card>
             
@@ -107,7 +107,7 @@ const OfferSection = () => {
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N120,000</div>
                 <p className="text-gray-600 mb-4">All 47 books in Audiobook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark">Choose Package</Button>
+                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/pq4680ru-r'}>Choose Package</Button>
               </CardContent>
             </Card>
           </div>

@@ -105,11 +105,6 @@ const UrgencySection = () => {
           <div className="text-navy font-bold mb-8 py-4 px-6 border-y-2 border-dashed border-navy-light bg-gray-50 rounded-lg transform rotate-1 hover:rotate-0 transition-transform">
             Once the timer hits zero, the price increases – <span className="text-gold-dark underline">NO EXCEPTIONS!</span>
           </div>
-          
-          <Button className="bg-gold hover:bg-gold-dark text-navy-dark font-bold text-lg py-7 px-8 mx-auto group transition-all duration-300 hover:shadow-xl rounded-xl">
-            I Want Access Now
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
         </div>
         
         <p className="text-lg flex items-center justify-center gap-2">

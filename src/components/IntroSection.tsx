@@ -47,10 +47,10 @@ const IntroSection = () => {
                 <p>"Why not keep the knowledge to himself?"</p>
               </CardContent>
             </Card>
-            <p className="text-gray-700 mt-8 font-bold text-lg relative inline-block">
-              Here's the truth they don't know:
+            <div className="text-gray-700 mt-8 font-bold text-lg relative inline-block">
+              <span>Here's the truth they don't know:</span>
               <div className="h-0.5 w-full bg-gradient-to-r from-gold to-transparent mt-1"></div>
-            </p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const HowToSection = () => {
   return (
@@ -19,9 +20,12 @@ const HowToSection = () => {
               <h3 className="text-xl font-bold mb-2 text-navy">
                 Click the button below to secure your bundle at this exclusive price
               </h3>
-              <Button className="mt-4 bg-gold hover:bg-gold-dark text-navy-dark font-bold">
-                Get Access Now
-              </Button>
+              <Link to="/#">
+                <Button 
+                  className="mt-4 bg-gold hover:bg-gold-dark text-navy-dark font-bold">
+                  Get Access Now
+                </Button>
+              </Link>
             </div>
           </div>
           
