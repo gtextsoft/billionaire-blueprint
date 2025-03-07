@@ -19,13 +19,13 @@ const Header = () => {
             <span className="text-sm">Offer ends <span className="font-bold">April 20th</span></span>
           </div>
 
-<link rel="stylesheet" href="/#" />
+{/* <link rel="stylesheet" href="/#" />
           <Button className="bg-gold hover:bg-gold-dark text-navy-dark font-bold group transition-all duration-300 hover:scale-105 shadow-md hover:shadow-xl rounded-full px-5" onClick={() => window.location.href = '/OfferSection'}>
             <Sparkles className="h-4 w-4 mr-1 text-navy-dark" />
             <span> Get Access Now </span>
             <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <link/>
+          <link/> */}
         </div>
       </div>
     </header>
