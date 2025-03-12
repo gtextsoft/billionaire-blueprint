@@ -14,7 +14,10 @@ const FinalCTA = () => {
           Click Below to Get Instant Access!
         </p>
         
-        <Button className="bg-gold hover:bg-gold-dark text-navy-dark font-bold text-lg py-6 px-10 animate-pulse">
+        <Button 
+          onClick={() => window.location.href = '#/offersection'}
+          className="bg-gold hover:bg-gold-dark text-navy-dark font-bold text-lg py-6 px-10 animate-pulse"
+        >
           Access All 47 Books Now
         </Button>
         
