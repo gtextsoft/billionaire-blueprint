@@ -15,7 +15,7 @@ const FinalCTA = () => {
         </p>
         
         <Button className="bg-gold hover:bg-gold-dark text-navy-dark font-bold text-lg py-6 px-10 animate-pulse">
-          Unlock All 47 Books Now
+          Access All 47 Books Now
         </Button>
         
         <div className="mt-12 text-sm text-gray-400">

@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check, Book, Headphones } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BookList } from './BookList';  // Add this import
 
 const OfferSection = () => {
   return (
@@ -13,8 +14,7 @@ const OfferSection = () => {
           same strategies that built my empire.
         </h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="text-white space-y-6">
+        <div className="text-white space-y-6 text-center lg:text-left mb-8">
             <p className="text-lg">
               Each book is a roadmap to success containing the exact principles I used to break barriers 
               and build wealth beyond limits.
@@ -38,6 +38,8 @@ const OfferSection = () => {
               Once you access this life-changing knowledge, the only thing standing between you and success… will be YOU.
             </p>
           </div>
+          
+          <BookList />
           
           <Card className="bg-white shadow-xl">
             <CardContent className="p-8">
@@ -63,9 +65,7 @@ const OfferSection = () => {
               </ul>
             </CardContent>
           </Card>
-        </div>
-        
-        <div className="bg-navy-light p-8 rounded-lg">
+        <div className="bg-navy-light p-8 rounded-lg mt-8">
           <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gold">A Once-in-a-Lifetime Offer</h3>
           <p className="text-white text-center mb-8 text-lg">
             These books contain billionaire-level secrets that should cost a fortune.<br/>
