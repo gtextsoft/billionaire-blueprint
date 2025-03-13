@@ -10,7 +10,7 @@ const OfferSection = () => {
     <section className="py-20 bg-navy">
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-center text-white">
-          Over the years, I have written <span className="text-gold">47 books</span> filled with the <br/>
+          Over the years, I have written <span className="text-gold">45 books</span> filled with the <br/>
           same strategies that built my empire.
         </h2>
         
@@ -21,7 +21,7 @@ const OfferSection = () => {
             </p>
             
             <p className="text-lg">
-              And for the first time ever, I am making <span className="font-bold text-gold">ALL 47 books</span> available 
+              And for the first time ever, I am making <span className="font-bold text-gold">ALL 45 books</span> available 
               to you at an unbelievable price.
             </p>
             
@@ -48,7 +48,7 @@ const OfferSection = () => {
               <ul className="space-y-4">
                 <li className="flex gap-3">
                   <Check className="h-6 w-6 text-gold flex-shrink-0" />
-                  <span>Access to <strong>47 Books</strong> packed with real-world strategies for building wealth, creating influence, and dominating your industry.</span>
+                  <span>Access to <strong>45 Books</strong> packed with real-world strategies for building wealth, creating influence, and dominating your industry.</span>
                 </li>
                 <li className="flex gap-3">
                   <Check className="h-6 w-6 text-gold flex-shrink-0" />
@@ -80,8 +80,8 @@ const OfferSection = () => {
               </div>
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N100,000</div>
-                <p className="text-gray-600 mb-4">All 47 books in Ebook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/5ugkve6-8l'}>Access All 47 Books Now</Button>
+                <p className="text-gray-600 mb-4">All 45 books in Ebook format</p>
+                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/5ugkve6-8l'}>Access All 45 Books Now</Button>
               </CardContent>
             </Card>
             
@@ -94,8 +94,8 @@ const OfferSection = () => {
               </div>
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N170,000</div>
-                <p className="text-gray-600 mb-4">All 47 books in BOTH Ebook & Audiobook formats</p>
-                <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://paystack.com/pay/pi8pm1848j'}>Access All 47 Books Now</Button>
+                <p className="text-gray-600 mb-4">All 45 books in BOTH Ebook & Audiobook formats</p>
+                <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://paystack.com/pay/pi8pm1848j'}>Access All 45 Books Now</Button>
               </CardContent>
             </Card>
             
@@ -106,8 +106,8 @@ const OfferSection = () => {
               </div>
               <CardContent className="p-6 text-center">
                 <div className="text-3xl font-bold mb-2 text-navy">N120,000</div>
-                <p className="text-gray-600 mb-4">All 47 books in Audiobook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/pq4680ru-r'}>Access All 47 Books Now</Button>
+                <p className="text-gray-600 mb-4">All 45 books in Audiobook format</p>
+                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/pq4680ru-r'}>Access All 45 Books Now</Button>
               </CardContent>
             </Card>
           </div>
