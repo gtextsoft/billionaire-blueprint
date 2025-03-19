@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Check, Book, Headphones } from 'lucide-react';
+import { Check, Book, Headphones, CreditCard, BarChart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { BookList } from './BookList';  // Add this import
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const OfferSection = () => {
   return (
@@ -72,44 +72,116 @@ const OfferSection = () => {
             But for today, you will be getting them for an unbelievable price
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <Card className="bg-white overflow-hidden">
-              <div className="bg-navy-light text-white p-4 text-center font-bold">
-                <Book className="h-8 w-8 mx-auto mb-2" />
-                Ebook Package
-              </div>
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold mb-2 text-navy">N100,000</div>
-                <p className="text-gray-600 mb-4">All 45 books in Ebook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/5ugkve6-8l'}>Access All 45 Books Now</Button>
-              </CardContent>
-            </Card>
+          <Tabs defaultValue="naira" className="mb-10">
+            <TabsList className="w-full max-w-md mx-auto bg-navy border border-gray-700 mb-8">
+              <TabsTrigger value="naira" className="w-1/2">Naira (₦)</TabsTrigger>
+              <TabsTrigger value="dollar" className="w-1/2">Dollar ($)</TabsTrigger>
+            </TabsList>
             
-            <Card className="bg-white overflow-hidden border-gold-dark border-2 transform scale-105 shadow-xl">
-              <div className="bg-gold text-navy p-4 text-center font-bold">
-                <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold-dark text-white text-xs py-1 px-3 rounded-full">BEST VALUE</span>
-                <Book className="h-8 w-8 mx-auto mb-2" />
-                <Headphones className="h-8 w-8 mx-auto mb-2" />
-                Complete Bundle
+            <TabsContent value="naira">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <Card className="bg-white overflow-hidden">
+                  <div className="bg-navy-light text-white p-4 text-center font-bold">
+                    <Book className="h-8 w-8 mx-auto mb-2" />
+                    Ebook Package
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">₦100,000</div>
+                    <p className="text-gray-600 mb-4">All 45 books in Ebook format</p>
+                    <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/5ugkve6-8l'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white overflow-hidden border-gold-dark border-2 transform scale-105 shadow-xl">
+                  <div className="bg-gold text-navy p-4 text-center font-bold">
+                    <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold-dark text-white text-xs py-1 px-3 rounded-full">BEST VALUE</span>
+                    <Book className="h-8 w-8 mx-auto mb-2" />
+                    <Headphones className="h-8 w-8 mx-auto mb-2" />
+                    Complete Bundle
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">₦170,000</div>
+                    <p className="text-gray-600 mb-4">All 45 books in BOTH Ebook & Audiobook formats</p>
+                    <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://paystack.com/pay/pi8pm1848j'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white overflow-hidden">
+                  <div className="bg-navy-light text-white p-4 text-center font-bold">
+                    <Headphones className="h-8 w-8 mx-auto mb-2" />
+                    Audiobook Package
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">₦120,000</div>
+                    <p className="text-gray-600 mb-4">All 45 books in Audiobook format</p>
+                    <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/pq4680ru-r'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
               </div>
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold mb-2 text-navy">N170,000</div>
-                <p className="text-gray-600 mb-4">All 45 books in BOTH Ebook & Audiobook formats</p>
-                <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://paystack.com/pay/pi8pm1848j'}>Access All 45 Books Now</Button>
-              </CardContent>
-            </Card>
+            </TabsContent>
             
-            <Card className="bg-white overflow-hidden">
-              <div className="bg-navy-light text-white p-4 text-center font-bold">
-                <Headphones className="h-8 w-8 mx-auto mb-2" />
-                Audiobook Package
+            <TabsContent value="dollar">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                <Card className="bg-white overflow-hidden">
+                  <div className="bg-navy-light text-white p-4 text-center font-bold">
+                    <Book className="h-8 w-8 mx-auto mb-2" />
+                    Ebook Package
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">$65</div>
+                    <p className="text-gray-600 mb-4">All 45 books in Ebook format</p>
+                    <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://pay.gtextglobal.com/ebook-all-digital-book-promo/'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white overflow-hidden border-gold-dark border-2 transform scale-105 shadow-xl">
+                  <div className="bg-gold text-navy p-4 text-center font-bold">
+                    <span className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold-dark text-white text-xs py-1 px-3 rounded-full">BEST VALUE</span>
+                    <Book className="h-8 w-8 mx-auto mb-2" />
+                    <Headphones className="h-8 w-8 mx-auto mb-2" />
+                    Complete Bundle
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">$133</div>
+                    <p className="text-gray-600 mb-4">All 45 books in BOTH Ebook & Audiobook formats</p>
+                    <Button className="w-full bg-gold hover:bg-gold-dark text-navy font-bold" onClick={() => window.location.href = 'https://pay.gtextglobal.com/ebook-all-digital-book-promo/'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="bg-white overflow-hidden">
+                  <div className="bg-navy-light text-white p-4 text-center font-bold">
+                    <Headphones className="h-8 w-8 mx-auto mb-2" />
+                    Audiobook Package
+                  </div>
+                  <CardContent className="p-6 text-center">
+                    <div className="text-3xl font-bold mb-2 text-navy">$80</div>
+                    <p className="text-gray-600 mb-4">All 45 books in Audiobook format</p>
+                    <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://pay.gtextglobal.com/ebook-all-digital-book-promo/'}>Access All 45 Books Now</Button>
+                  </CardContent>
+                </Card>
               </div>
-              <CardContent className="p-6 text-center">
-                <div className="text-3xl font-bold mb-2 text-navy">N120,000</div>
-                <p className="text-gray-600 mb-4">All 45 books in Audiobook format</p>
-                <Button className="w-full bg-navy hover:bg-navy-dark" onClick={() => window.location.href = 'https://paystack.com/pay/pq4680ru-r'}>Access All 45 Books Now</Button>
-              </CardContent>
-            </Card>
+            </TabsContent>
+          </Tabs>
+
+          <div className="bg-white p-6 rounded-lg mb-10">
+            <h4 className="text-xl font-bold mb-4 text-navy flex items-center">
+              <BarChart className="h-6 w-6 mr-2 text-gold" />
+              Bank Transfer Option
+            </h4>
+            <p className="text-gray-700 mb-4">
+              To transfer to a Nigeria Bank Account, kindly use this:
+            </p>
+            <div className="bg-gray-100 p-4 rounded-md mb-4">
+              <p className="mb-1"><strong>Acct Name:</strong> SA CONSULTING AND INVESTMENT LIMITED</p>
+              <p className="mb-1"><strong>Acct No.:</strong> 6484513820</p>
+              <p><strong>Bank Name:</strong> Moniepoint MFB</p>
+            </div>
+            <p className="text-gray-700">
+              After payment, kindly send your proof of payment to:
+              <a href="mailto:products@stephenakintayo.com" className="text-blue-600 ml-1 font-medium">
+                products@stephenakintayo.com
+              </a>
+            </p>
           </div>
           
           <div className="text-center text-white">
@@ -117,9 +189,9 @@ const OfferSection = () => {
               This is access to a lifetime knowledge for the price of a weekend getaway
             </p>
             <p className="text-lg mb-6">
-              Let's break it down — N170,000 divided by 365<br/>
-              This means that you get access to a lifetime of wisdom for just <span className="text-gold font-bold">N466 a day</span><br/>
-              Less than N500 is what it'll cost you in a day to set a great path for yourself and posterity
+              Let's break it down — ₦170,000 divided by 365<br/>
+              This means that you get access to a lifetime of wisdom for just <span className="text-gold font-bold">₦466 a day</span><br/>
+              Less than ₦500 is what it'll cost you in a day to set a great path for yourself and posterity
             </p>
             <p className="text-xl font-bold">
               This is a great steal, and I know it. But as I said, my goal is simple:
